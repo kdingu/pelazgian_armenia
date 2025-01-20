@@ -12,13 +12,17 @@ import i18nServer, { localeCookie } from "./modules/i18n.server";
 import { useChangeLanguage } from "remix-i18next/react";
 
 import "./tailwind.css";
+import { Backend } from "~/lib/services/backend/backend.server";
 
 export const handle = { i18n: ["translation"] };
 
 export async function loader({ request }: LoaderFunctionArgs) {
   const locale = await i18nServer.getLocale(request);
+  const books = await Backend.getBooks();
+  const categories = await Backend.getCategories();
+
   return json(
-    { locale },
+    { locale, books, categories },
     { headers: { "Set-Cookie": await localeCookie.serialize(locale) } }
   );
 }
@@ -44,7 +48,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  const { locale } = useLoaderData<typeof loader>();
+  const { locale, books, categories } = useLoaderData<typeof loader>();
   useChangeLanguage(locale);
-  return <Outlet context={{ locale }} />;
+  return <Outlet context={{ locale, books, categories }} />;
 }

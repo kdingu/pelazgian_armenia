@@ -8,6 +8,7 @@ export default {
       colors: {
         "soft-red": "#c24a3b",
         "light-cream": "#faf3e0",
+        "dark-blue": "#045897"
       },
     },
   },

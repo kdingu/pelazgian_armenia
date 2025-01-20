@@ -16,9 +16,20 @@ class DjangoBackend extends RestClient {
   }
 
   public async getBooks() {
-    return {
-      data: [],
-    };
+    return this.get("/books/get_all");
+  }
+
+  // Not implemented by backend?
+  public async getBookById(id: string) {
+    return this.get("/books/get?id=" + id);
+  }
+
+  public async getBookBySlug(slug: string) {
+    return this.get("/books/get?slug=" + slug);
+  }
+
+  public async getCategories() {
+    return this.get("/books/categories")
   }
 }
 
