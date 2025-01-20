@@ -18,4 +18,6 @@ export type Book = {
   publish_year: number;
   language: string;
   cover_url: string;
+  isbn: string;
+  description: string;
 };

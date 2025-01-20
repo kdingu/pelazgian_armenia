@@ -1,6 +1,7 @@
 export default {
   title: "Armenia Pellazgjike",
   description: "Porta juaj drejt Letërsisë Armene",
+  noCoverText: "Nuk u gjet koveri.",
   view_more: "Shiko më shumë",
   sort_by: "Rendit sipas",
   kategorite: "Kategoritë",

@@ -23,8 +23,15 @@ class DjangoBackend extends RestClient {
     return books.slice(0, 4);
   }
 
-  public async getBooks() {
-    return this.get("/books/get_all");
+  public async getBooks(category: string|null|undefined = "", locale = "sq") {
+    const query = new URLSearchParams();
+
+    query.append("locale", locale);
+    if (category) query.append("category", category);
+
+    console.log("GET", query.toString());
+
+    return this.get(`/books/get_all?${query.toString()}`);
   }
 
   // Not implemented by backend?
@@ -32,8 +39,8 @@ class DjangoBackend extends RestClient {
     return this.get("/books/get?id=" + id);
   }
 
-  public async getBookBySlug(slug: string) {
-    return this.get("/books/get?slug=" + slug);
+  public async getBookBySlug(slug: string, locale = "sq") {
+    return this.get(`/books/get?language=${locale}&slug=` + slug);
   }
 
   public async getCategories() {

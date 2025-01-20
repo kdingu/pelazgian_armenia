@@ -1,6 +1,7 @@
 export default {
   title: "Pelasgian Armenia",
   description: "Your Gateway to Armenian Literature",
+  noCoverText: "No cover available.",
   view_more: "View More",
   sort_by: "Sort by",
   kategorite: "Categories",

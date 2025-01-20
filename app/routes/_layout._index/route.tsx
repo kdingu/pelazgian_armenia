@@ -26,27 +26,27 @@ export default function Index() {
       <Title className="text-pastel-blue">{t("home.title")}</Title>
       <Subtitle>{t("home.subtitle")}</Subtitle>
 
-      <hr className="border-pastel-orange border-b-2 mt-4 mb-10" />
+      <hr className="my-6" />
 
       <div
         className="text-justify"
         dangerouslySetInnerHTML={{ __html: t("home.body") }}
       />
 
-        <Link to="/books" className="w-full">
-          <Button className="w-full group">
-            <div className="flex items-center justify-center gap-x-2">
-              <span>{t("libraria")}</span>
-              <GrNext className="transition-all group-hover:translate-x-2" />
-            </div>
-          </Button>
-        </Link>
+      <Link to="/books" className="w-full">
+        <Button className="w-full group">
+          <div className="flex items-center justify-center gap-x-2">
+            <span>{t("libraria")}</span>
+            <GrNext className="transition-all group-hover:translate-x-2" />
+          </div>
+        </Button>
+      </Link>
 
-      <hr className="border-pastel-orange border-b-2 my-10" />
+      <hr className="my-6" />
 
       <Categories />
 
-      <hr className="border-pastel-orange border-b-2 my-10" />
+      <hr className="my-6" />
 
       <HighlightedBooks data={highlightedBooks} />
     </div>

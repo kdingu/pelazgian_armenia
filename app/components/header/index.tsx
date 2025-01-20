@@ -16,7 +16,7 @@ function Header() {
   const { t } = useTranslation();
 
   return (
-    <div className="sticky top-0">
+    <div className="sticky top-0 z-50">
       <Container className="!px-8 relative shadow-lg bg-soft-red flex justify-between items-center py-2 text-light-cream">
         <div className="flex items-center justify-between gap-x-4">
           <img
