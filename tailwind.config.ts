@@ -5,7 +5,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {},
-      colors: {},
+      colors: {
+        "soft-red": "#c24a3b"
+      },
     },
   },
   plugins: [],

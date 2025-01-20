@@ -8,11 +8,11 @@ interface Props {
 
 function Layout({children}: Props) {
     return (
-        <div className="border-4">
+        <>
             <Header />
             {children}
             <Footer />
-        </div>
+        </>
     );
 }
 

@@ -46,5 +46,5 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   const { locale } = useLoaderData<typeof loader>();
   useChangeLanguage(locale);
-  return <Outlet />;
+  return <Outlet context={{locale}} />;
 }
