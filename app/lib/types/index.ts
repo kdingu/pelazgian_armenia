@@ -20,4 +20,5 @@ export type Book = {
   cover_url: string;
   isbn: string;
   description: string;
+  publishing: string;
 };
