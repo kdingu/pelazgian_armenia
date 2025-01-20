@@ -4,6 +4,8 @@ export default {
   view_more: "View More",
   sort_by: "Sort by",
   kategorite: "Categories",
+  highlighted_books: "Latest Books",
+  libraria: "View all books",
   be: {
     poetry: "Poetry",
     dictionary: "Dictionary",

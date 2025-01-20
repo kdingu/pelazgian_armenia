@@ -15,6 +15,14 @@ class DjangoBackend extends RestClient {
     return DjangoBackend.#instance;
   }
 
+  public async getHighlightedBooks() {
+    const books = await this.get("/books/get_all?is_featured=true");
+
+    if (!Array.isArray(books)) return [];
+
+    return books.slice(0, 4);
+  }
+
   public async getBooks() {
     return this.get("/books/get_all");
   }

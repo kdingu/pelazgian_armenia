@@ -4,6 +4,8 @@ export default {
   view_more: "Shiko më shumë",
   sort_by: "Rendit sipas",
   kategorite: "Kategoritë",
+  highlighted_books: "Publikimet më të reja",
+  libraria: "Shiko të gjithë librat",
   be: {
     poetry: "Poezi",
     dictionary: "Fjalor",

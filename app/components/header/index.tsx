@@ -16,8 +16,8 @@ function Header() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-soft-red">
-      <Container className="flex justify-between items-center py-2 text-light-cream">
+    <>
+      <Container className="bg-pastel-blue flex justify-between items-center py-2 text-light-cream">
         <div className="flex items-center justify-between gap-x-4">
           <img
             src="/woa-logo.png"
@@ -39,18 +39,15 @@ function Header() {
           </Form>
         </div>
         <nav className="flex gap-x-4 justify-between items-center">
-          <NavLink to="/">
-            {t("header.kreu")}
-          </NavLink>
-          <NavLink to="/rreth-nesh">
-            {t("header.rreth_nesh")}
-          </NavLink>
-          <NavLink to="/kontakt">
-            {t("header.kontakt")}
-          </NavLink>
+          <NavLink to="/">{t("header.kreu")}</NavLink>
+          <NavLink to="/rreth-nesh">{t("header.rreth_nesh")}</NavLink>
+          <NavLink to="/kontakt">{t("header.kontakt")}</NavLink>
         </nav>
       </Container>
-    </div>
+      <Container className="!px-0">
+        <div className="w-full h-2 bg-gradient-to-r from-flag-red via-flag-blue to-flag-orange" />
+      </Container>
+    </>
   );
 }
 

@@ -3,9 +3,22 @@ import Title from "~/components/title";
 import Subtitle from "~/components/subtitle";
 import { useTranslation } from "react-i18next";
 import Categories from "~/routes/_layout._index/components/categories";
-import LatestBooks from "~/routes/_layout._index/components/latest-books";
+import HighlightedBooks from "~/routes/_layout._index/components/highlighted-books";
+import { Backend } from "~/lib/services/backend/backend.server";
+import { Link, useLoaderData } from "@remix-run/react";
+import Button from "~/components/button";
+import { GrNext } from "react-icons/gr";
+
+export const loader = async () => {
+  const highlightedBooks = await Backend.getHighlightedBooks();
+
+  return {
+    highlightedBooks,
+  };
+};
 
 export default function Index() {
+  const { highlightedBooks } = useLoaderData<typeof loader>();
   const { t } = useTranslation();
 
   return (
@@ -13,20 +26,29 @@ export default function Index() {
       <Title className="text-dark-blue">{t("home.title")}</Title>
       <Subtitle>{t("home.subtitle")}</Subtitle>
 
-      <hr className="border-dark-blue border-b-2 my-10" />
+      <hr className="border-pastel-orange border-b-2 mt-4 mb-10" />
 
       <div
         className="text-justify"
         dangerouslySetInnerHTML={{ __html: t("home.body") }}
       />
 
-      <hr className="border-dark-blue border-b-2 my-10" />
+        <Link to="/books" className="w-full">
+          <Button className="w-full group">
+            <div className="flex items-center justify-center gap-x-2">
+              <span>{t("libraria")}</span>
+              <GrNext className="transition-all group-hover:translate-x-2" />
+            </div>
+          </Button>
+        </Link>
+
+      <hr className="border-pastel-orange border-b-2 my-10" />
 
       <Categories />
 
-      <hr className="border-dark-blue border-b-2 my-10" />
+      <hr className="border-pastel-orange border-b-2 my-10" />
 
-      <LatestBooks />
+      <HighlightedBooks data={highlightedBooks} />
     </Container>
   );
 }
