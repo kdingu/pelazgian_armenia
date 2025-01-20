@@ -31,6 +31,9 @@ export default {
   contact: {
     title: "Kontakt"
   },
+  single_book: {
+    title: "Te dhënat e librit",
+  },
   footer: {
     disclaimer: "© 2024 Fjalë të Armenisë. Të gjitha të drejtat të rezevuara.",
   },

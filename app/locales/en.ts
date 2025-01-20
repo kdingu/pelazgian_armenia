@@ -31,6 +31,9 @@ export default {
   contact: {
     title: "Contact"
   },
+  single_book: {
+    title: "Single Book",
+  },
   footer: {
     disclaimer: "© 2024 Words of Armenia. All Rights Reserved.",
   },
