@@ -8,7 +8,7 @@ type Props = {
 function Button({ children, className = "" }: Props) {
   return (
     <button
-      className={`${className} transition-all border-2 text-white border-dark-blue bg-dark-blue px-10 py-2  hover:bg-soft-red hover:border-soft-red`}
+      className={`${className} transition-all border-2 text-pastel-blue border-pastel-blue px-10 py-2  hover:bg-soft-red hover:border-soft-red hover:text-white`}
     >
       {children}
     </button>

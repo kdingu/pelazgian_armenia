@@ -23,7 +23,7 @@ export default function Index() {
 
   return (
     <div className="py-10">
-      <Title className="text-dark-blue">{t("home.title")}</Title>
+      <Title className="text-pastel-blue">{t("home.title")}</Title>
       <Subtitle>{t("home.subtitle")}</Subtitle>
 
       <hr className="border-pastel-orange border-b-2 mt-4 mb-10" />

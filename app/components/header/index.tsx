@@ -17,7 +17,7 @@ function Header() {
 
   return (
     <>
-      <Container className="bg-pastel-blue flex justify-between items-center py-2 text-light-cream">
+      <Container className="bg-soft-red flex justify-between items-center py-2 text-light-cream">
         <div className="flex items-center justify-between gap-x-4">
           <img
             src="/woa-logo.png"
@@ -45,7 +45,7 @@ function Header() {
         </nav>
       </Container>
       <Container className="!px-0">
-        <div className="w-full h-2 bg-gradient-to-r from-flag-red via-flag-blue to-flag-orange" />
+        <div className="w-full h-4 bg-gradient-to-r from-flag-red via-flag-blue to-flag-orange" />
       </Container>
     </>
   );
