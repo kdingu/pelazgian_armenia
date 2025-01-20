@@ -18,11 +18,11 @@ export const handle = { i18n: ["translation"] };
 
 export async function loader({ request }: LoaderFunctionArgs) {
   const locale = await i18nServer.getLocale(request);
-  const books = await Backend.getBooks();
+  // const books = await Backend.getBooks();
   const categories = await Backend.getCategories();
 
   return json(
-    { locale, books, categories },
+    { locale, categories },
     { headers: { "Set-Cookie": await localeCookie.serialize(locale) } }
   );
 }
@@ -48,7 +48,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  const { locale, books, categories } = useLoaderData<typeof loader>();
+  const { locale, categories } = useLoaderData<typeof loader>();
   useChangeLanguage(locale);
-  return <Outlet context={{ locale, books, categories }} />;
+  return <Outlet context={{ locale, categories }} />;
 }
