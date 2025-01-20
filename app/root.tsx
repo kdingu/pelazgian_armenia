@@ -11,6 +11,8 @@ import {
 import i18nServer, { localeCookie } from "./modules/i18n.server";
 import { useChangeLanguage } from "remix-i18next/react";
 
+import "./tailwind.css";
+
 export const handle = { i18n: ["translation"] };
 
 export async function loader({ request }: LoaderFunctionArgs) {
