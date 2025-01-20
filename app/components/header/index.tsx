@@ -17,7 +17,7 @@ function Header() {
 
   return (
     <div className="sticky top-0">
-      <Container className="relative shadow-lg bg-soft-red flex justify-between items-center py-2 text-light-cream">
+      <Container className="!px-8 relative shadow-lg bg-soft-red flex justify-between items-center py-2 text-light-cream">
         <div className="flex items-center justify-between gap-x-4">
           <img
             src="/woa-logo.png"
@@ -44,8 +44,8 @@ function Header() {
           <NavLink to="/contact">{t("header.kontakt")}</NavLink>
         </nav>
 
-        <div className="absolute top-0 right-full w-[20px] h-full bg-gradient-to-b from-flag-red to-black" />
-        <div className="absolute top-0 left-full w-[20px] h-full bg-gradient-to-b from-flag-red via-flag-blue to-flag-orange" />
+        <div className="absolute top-0 left-0 w-[20px] h-full bg-gradient-to-b from-flag-red to-black" />
+        <div className="absolute top-0 right-0 w-[20px] h-full bg-gradient-to-b from-flag-red via-flag-blue to-flag-orange" />
       </Container>
     </div>
   );
