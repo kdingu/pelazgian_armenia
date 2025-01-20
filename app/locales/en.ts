@@ -22,6 +22,15 @@ export default {
 <p>We invite you to be part of it!</p>
 `,
   },
+  books: {
+    title: "Library"
+  },
+  about_us: {
+    title: "About Us"
+  },
+  contact: {
+    title: "Contact"
+  },
   footer: {
     disclaimer: "© 2024 Words of Armenia. All Rights Reserved.",
   },

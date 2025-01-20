@@ -40,8 +40,8 @@ function Header() {
         </div>
         <nav className="flex gap-x-4 justify-between items-center">
           <NavLink to="/">{t("header.kreu")}</NavLink>
-          <NavLink to="/rreth-nesh">{t("header.rreth_nesh")}</NavLink>
-          <NavLink to="/kontakt">{t("header.kontakt")}</NavLink>
+          <NavLink to="/about-us">{t("header.rreth_nesh")}</NavLink>
+          <NavLink to="/contact">{t("header.kontakt")}</NavLink>
         </nav>
       </Container>
       <Container className="!px-0">

@@ -18,7 +18,6 @@ export const handle = { i18n: ["translation"] };
 
 export async function loader({ request }: LoaderFunctionArgs) {
   const locale = await i18nServer.getLocale(request);
-  // const books = await Backend.getBooks();
   const categories = await Backend.getCategories();
 
   return json(

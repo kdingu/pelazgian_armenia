@@ -22,7 +22,7 @@ export default function Index() {
   const { t } = useTranslation();
 
   return (
-    <Container className="py-10">
+    <div className="py-10">
       <Title className="text-dark-blue">{t("home.title")}</Title>
       <Subtitle>{t("home.subtitle")}</Subtitle>
 
@@ -49,6 +49,6 @@ export default function Index() {
       <hr className="border-pastel-orange border-b-2 my-10" />
 
       <HighlightedBooks data={highlightedBooks} />
-    </Container>
+    </div>
   );
 }

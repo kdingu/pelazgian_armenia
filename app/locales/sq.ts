@@ -22,6 +22,15 @@ export default {
 <p>Ju ftojmë të jeni pjesë e tij!</p>
     `,
   },
+  books: {
+    title: "Libraria"
+  },
+  about_us: {
+    title: "Rreth Nesh"
+  },
+  contact: {
+    title: "Kontakt"
+  },
   footer: {
     disclaimer: "© 2024 Fjalë të Armenisë. Të gjitha të drejtat të rezevuara.",
   },
