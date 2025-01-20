@@ -7,6 +7,7 @@ export default {
       backgroundImage: {},
       colors: {
         "soft-red": "#c24a3b",
+        "light-cream": "#faf3e0",
       },
     },
   },
