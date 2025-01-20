@@ -65,7 +65,7 @@ class RestClient {
 
     // Append query parameters to the URL if provided
     Object.keys(params).forEach((key) =>
-      url.searchParams.append(key, params[key]),
+      url.searchParams.append(key, params[key])
     );
 
     // Initialize default headers

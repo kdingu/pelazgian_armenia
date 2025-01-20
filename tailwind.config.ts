@@ -6,7 +6,7 @@ export default {
     extend: {
       backgroundImage: {},
       colors: {
-        "soft-red": "#c24a3b"
+        "soft-red": "#c24a3b",
       },
     },
   },

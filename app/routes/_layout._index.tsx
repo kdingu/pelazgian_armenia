@@ -6,7 +6,7 @@ import {
 import { Form, useLoaderData } from "@remix-run/react";
 import { useTranslation } from "react-i18next";
 import i18nServer from "~/modules/i18n.server";
-import {Backend} from "~/lib/services/backend/backend.server";
+import { Backend } from "~/lib/services/backend/backend.server";
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   return [
@@ -27,7 +27,7 @@ export default function Index() {
   const { t } = useTranslation();
   const { description, books } = useLoaderData<typeof loader>();
 
-  console.log("books", books)
+  console.log("books", books);
 
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>

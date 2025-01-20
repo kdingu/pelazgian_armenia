@@ -19,7 +19,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
   const locale = await i18nServer.getLocale(request);
   return json(
     { locale },
-    { headers: { "Set-Cookie": await localeCookie.serialize(locale) } },
+    { headers: { "Set-Cookie": await localeCookie.serialize(locale) } }
   );
 }
 
@@ -46,5 +46,5 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   const { locale } = useLoaderData<typeof loader>();
   useChangeLanguage(locale);
-  return <Outlet context={{locale}} />;
+  return <Outlet context={{ locale }} />;
 }
