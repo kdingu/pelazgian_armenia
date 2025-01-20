@@ -13,12 +13,12 @@ function Categories() {
     <section>
       <SectionTitle>{t("kategorite")}</SectionTitle>
 
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {categories.map((ctg: Category) => {
           return (
             <Link
               key={ctg.id}
-              to={`/books?category=${ctg.slug}`}
+              to={`/books?category=${ctg.id}`}
               className="w-full"
             >
               <Button className="group w-full">

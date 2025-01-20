@@ -1,7 +1,6 @@
 import { Book } from "~/lib/types";
 import SectionTitle from "~/components/section-title";
 import { useTranslation } from "react-i18next";
-import Button from "~/components/button";
 import { GrNext } from "react-icons/gr";
 import { Link } from "@remix-run/react";
 import BookTile from "~/components/book";
@@ -15,7 +14,7 @@ function HighlightedBooks({ data }: Props) {
 
   return (
     <section>
-      <div className="flex justify-between">
+      <div className="flex flex-col mb-10 sm:mb-0 sm:flex-row justify-between">
         <SectionTitle>{t("highlighted_books")}</SectionTitle>
 
         <Link to="/books" className="group hover:underline h-max w-max">
@@ -26,28 +25,7 @@ function HighlightedBooks({ data }: Props) {
         </Link>
       </div>
 
-      <div className="grid grid-cols-4 gap-2">
-        {data.map((book: Book) => {
-          return (
-            <Link key={book.id} to={`/books/${book.slug}`}>
-              <BookTile data={book} />
-            </Link>
-          );
-        })}
-        {data.map((book: Book) => {
-          return (
-            <Link key={book.id} to={`/books/${book.slug}`}>
-              <BookTile data={book} />
-            </Link>
-          );
-        })}
-        {data.map((book: Book) => {
-          return (
-            <Link key={book.id} to={`/books/${book.slug}`}>
-              <BookTile data={book} />
-            </Link>
-          );
-        })}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {data.map((book: Book) => {
           return (
             <Link key={book.id} to={`/books/${book.slug}`}>

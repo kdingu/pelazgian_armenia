@@ -28,7 +28,6 @@ function Listing({ data }: Props) {
 
       <div className="grid grid-cols-4 gap-6">
         {data.map((book: Book) => {
-          console.log("book", book);
           return (
             <Link key={book.id} to={`/book/${book.slug}`}>
               <article className="relative h-[300px] overflow-hidden group">

@@ -29,8 +29,6 @@ class DjangoBackend extends RestClient {
     query.append("locale", locale);
     if (category) query.append("category", category);
 
-    console.log("GET", query.toString());
-
     return this.get(`/books/get_all?${query.toString()}`);
   }
 

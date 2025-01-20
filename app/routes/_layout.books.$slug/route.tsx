@@ -26,13 +26,12 @@ function Route() {
   const {t} = useTranslation();
 
   const { book } = useLoaderData<typeof loader>();
-  console.log(book);
 
   const popupBgRef = useRef();
 
   const handleGoBack = (event, bypassEvent) => {
     if (bypassEvent || (event.target === popupBgRef.current)) {
-      nav(-1);
+      nav("/books");
     }
   };
 
