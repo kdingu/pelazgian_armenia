@@ -1,8 +1,9 @@
 import { Form, Link, useOutletContext } from "@remix-run/react";
 import { useTranslation } from "react-i18next";
+import { OutletContext } from "~/lib/types";
 
 function Header() {
-  const { locale } = useOutletContext();
+  const { locale } = useOutletContext<OutletContext>();
   const { t } = useTranslation();
 
   return (
