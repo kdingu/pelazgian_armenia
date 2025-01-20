@@ -29,8 +29,8 @@ export default function Index() {
       <p>{description}</p>
 
       <Form>
-        <button type="submit" name="lng" value="es">
-          Español
+        <button type="submit" name="lng" value="sq">
+          Shqip
         </button>
         <button type="submit" name="lng" value="en">
           English
