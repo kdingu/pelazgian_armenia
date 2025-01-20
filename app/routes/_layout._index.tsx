@@ -6,6 +6,7 @@ import {
 import { Form, useLoaderData } from "@remix-run/react";
 import { useTranslation } from "react-i18next";
 import i18nServer from "~/modules/i18n.server";
+import {Backend} from "~/lib/services/backend/backend.server";
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   return [
@@ -16,12 +17,17 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => {
 
 export async function loader({ request }: LoaderFunctionArgs) {
   const t = await i18nServer.getFixedT(request);
-  return json({ title: t("title"), description: t("description") });
+
+  const books = await Backend.getBooks();
+
+  return json({ books, title: t("title"), description: t("description") });
 }
 
 export default function Index() {
   const { t } = useTranslation();
-  const { description } = useLoaderData<typeof loader>();
+  const { description, books } = useLoaderData<typeof loader>();
+
+  console.log("books", books)
 
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>

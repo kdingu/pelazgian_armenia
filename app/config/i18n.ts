@@ -5,7 +5,7 @@ import sqTranslation from "~/locales/sq";
 
 // This is the list of languages your application supports, the last one is your
 // fallback language
-export const supportedLngs = ["al", "en"];
+export const supportedLngs = ["sq", "en"];
 
 // This is the language you want to use in case
 // the user language is not in the supportedLngs
