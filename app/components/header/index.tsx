@@ -44,8 +44,8 @@ function Header() {
           <NavLink to="/contact">{t("header.kontakt")}</NavLink>
         </nav>
 
-        <div className="absolute top-0 left-full w-[20px] rounded-r-xl h-full bg-gradient-to-b from-flag-red to-black" />
-        <div className="absolute top-0 right-full w-[20px] rounded-l-xl h-full bg-gradient-to-b from-flag-red via-flag-blue to-flag-orange" />
+        <div className="absolute top-0 right-full w-[20px] h-full bg-gradient-to-b from-flag-red to-black" />
+        <div className="absolute top-0 left-full w-[20px] h-full bg-gradient-to-b from-flag-red via-flag-blue to-flag-orange" />
       </Container>
     </div>
   );
