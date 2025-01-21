@@ -44,7 +44,7 @@ function MobileHeader() {
 
           <div className="pt-12 px-2">
             <span className="capitalize text-sm">{t("language")}:</span>
-            <Form className="flex flex-col justify-center items-start">
+            <Form action="#" className="flex flex-col justify-center items-start">
               <LanguageButton name="lng" value="sq" locale={locale}>
                 Shqip
               </LanguageButton>

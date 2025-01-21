@@ -27,7 +27,7 @@ function Header() {
             height={60}
             className="rounded-full"
           />
-          <Form className="hidden md:flex items-center justify-between gap-x-1">
+          <Form action="#" className="hidden md:flex items-center justify-between gap-x-1">
             <LanguageButton name="lng" value="sq" locale={locale}>
               Shqip
             </LanguageButton>
