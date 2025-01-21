@@ -17,7 +17,7 @@ function Header() {
 
   return (
     <div className="sticky top-0 z-50">
-      <Container className="!px-8 relative shadow-lg bg-soft-red flex justify-between items-center py-2 text-light-cream">
+      <Container className="!px-8 relative border-b bg-white flex justify-between items-center py-2">
         <div className="flex items-center justify-between gap-x-4">
           <img
             src="/woa-logo.png"
@@ -31,13 +31,12 @@ function Header() {
               Shqip
             </LanguageButton>
 
-            <div className="h-6 border border-light-cream" />
-
             <LanguageButton name="lng" value="en" locale={locale}>
               English
             </LanguageButton>
           </Form>
         </div>
+
         <nav className="flex gap-x-4 justify-between items-center">
           <NavLink to="/">{t("header.kreu")}</NavLink>
           <NavLink to="/about-us">{t("header.rreth_nesh")}</NavLink>

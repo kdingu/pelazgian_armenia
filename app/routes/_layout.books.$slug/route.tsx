@@ -23,14 +23,15 @@ export const loader = async ({ request, params }: LoaderFunctionArgs) => {
 
 function Route() {
   const nav = useNavigate();
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   const { book } = useLoaderData<typeof loader>();
+  console.log(book);
 
   const popupBgRef = useRef();
 
   const handleGoBack = (event, bypassEvent) => {
-    if (bypassEvent || (event.target === popupBgRef.current)) {
+    if (bypassEvent || event.target === popupBgRef.current) {
       nav("/books");
     }
   };
@@ -58,7 +59,11 @@ function Route() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          <img src={book.cover_url} alt="book cover" className="hidden md:block md:col-span-4" />
+          <img
+            src={book.cover_url}
+            alt="book cover"
+            className="hidden md:block md:col-span-4"
+          />
           <div className="md:col-span-8 flex justify-between flex-col">
             <div>
               <div className="flex flex-wrap items-center sm:justify-start sm:items-center gap-2 mb-4">
@@ -85,13 +90,17 @@ function Route() {
               <Subtitle className="!text-black font-normal !text-sm">
                 {book.subtitle}
               </Subtitle>
-              <p className="text-justify overflow-y-scroll max-h-[200px] sm:max-h-auto">{book.description}</p>
+              <p className="text-justify overflow-y-scroll max-h-[200px] sm:max-h-auto">
+                {book.description}
+              </p>
               <hr />
               <p className="text-sm">{book.publishing}</p>
             </div>
 
             <div className="grid grid-cols-12 gap-2">
-              <Button className="col-span-12 md:col-span-4">{t("download")}</Button>
+              <Button className="col-span-12 md:col-span-4">
+                {t("download")}
+              </Button>
               <Button className="col-span-12 md:col-span-4">{t("open")}</Button>
             </div>
           </div>

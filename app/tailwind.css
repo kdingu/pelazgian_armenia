@@ -5,11 +5,32 @@
 html,
 body {
   @apply bg-[#f2f2f2];
-  font-family: "Open Sans", serif;
+  font-family: "EB Garamond", "Open Sans", serif;
+}
+
+body {
+  font-size: 22px;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://plus.unsplash.com/premium_photo-1675695700239-44153e6bf430?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  opacity: 30%;
 }
 
 p {
   @apply mt-2 mb-4;
+  font-family: "Open Sans", "EB Garamond", serif;
+  font-size: 20px;
 }
 
 .custom-cursor {
