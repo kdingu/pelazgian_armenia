@@ -23,7 +23,10 @@ class DjangoBackend extends RestClient {
     return books.slice(0, 4);
   }
 
-  public async getBooks(category: string|null|undefined = "", locale = "sq") {
+  public async getBooks(
+    category: string | null | undefined = "",
+    locale = "sq"
+  ) {
     const query = new URLSearchParams();
 
     query.append("locale", locale);
@@ -42,7 +45,7 @@ class DjangoBackend extends RestClient {
   }
 
   public async getCategories() {
-    return this.get("/books/categories")
+    return this.get("/books/categories");
   }
 }
 

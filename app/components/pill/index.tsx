@@ -5,9 +5,11 @@ type Props = {
   title?: string;
 };
 
-function Pill({children, title = ""}: Props) {
+function Pill({ children, title = "" }: Props) {
   return (
-    <span title={title} className="px-3 py-1 rounded bg-flag-orange/20">{children}</span>
+    <span title={title} className="px-3 py-1 rounded bg-flag-orange/20">
+      {children}
+    </span>
   );
 }
 

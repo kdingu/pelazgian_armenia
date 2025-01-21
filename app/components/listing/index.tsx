@@ -17,7 +17,12 @@ function Listing({ data }: Props) {
       <div className="mb-6">
         <label htmlFor="sort">
           <div className="mb-1">{t("sort_by")}:</div>
-          <select name="sort" id="sort" defaultValue="year-desc" className="p-2">
+          <select
+            name="sort"
+            id="sort"
+            defaultValue="year-desc"
+            className="p-2"
+          >
             <option value="year-desc">Publication Year (Newest first)</option>
             <option value="year-asc">Publication Year (Oldest first)</option>
             <option value="title-asc">Title (A to Z)</option>
@@ -37,8 +42,7 @@ function Listing({ data }: Props) {
                   className="w-full h-full object-cover"
                 />
 
-                <div
-                  className="opacity-0 group-hover:opacity-100 transition-all absolute bottom-0 left-0 w-full h-32 text-light-cream flex justify-center items-end pb-2 bg-gradient-to-t from-black">
+                <div className="opacity-0 group-hover:opacity-100 transition-all absolute bottom-0 left-0 w-full h-32 text-light-cream flex justify-center items-end pb-2 bg-gradient-to-t from-black">
                   {t("view_more")}
                 </div>
               </article>

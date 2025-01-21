@@ -24,13 +24,13 @@ export default {
     `,
   },
   books: {
-    title: "Libraria"
+    title: "Libraria",
   },
   about_us: {
-    title: "Rreth Nesh"
+    title: "Rreth Nesh",
   },
   contact: {
-    title: "Kontakt"
+    title: "Kontakt",
   },
   single_book: {
     title: "Te dhënat e librit",

@@ -24,13 +24,13 @@ export default {
 `,
   },
   books: {
-    title: "Library"
+    title: "Library",
   },
   about_us: {
-    title: "About Us"
+    title: "About Us",
   },
   contact: {
-    title: "Contact"
+    title: "Contact",
   },
   single_book: {
     title: "Single Book",

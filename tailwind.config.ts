@@ -21,7 +21,7 @@ export default {
         "dark-blue": "#045897",
         "paper-white": "#fefefe",
       },
-      fontFamily: {}
+      fontFamily: {},
     },
   },
   plugins: [],

@@ -6,7 +6,9 @@ type Props = {
 };
 
 function Subtitle({ children, className = "" }: Props) {
-  return <h2 className={`text-4xl text-pastel-blue ${className}`}>{children}</h2>;
+  return (
+    <h2 className={`text-4xl text-pastel-blue ${className}`}>{children}</h2>
+  );
 }
 
 export default Subtitle;

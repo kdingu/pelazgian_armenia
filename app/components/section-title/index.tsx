@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-function SectionTitle({children}: Props) {
+function SectionTitle({ children }: Props) {
   return (
     <Subtitle className="relative w-max mb-4">
       <span>{children}</span>
