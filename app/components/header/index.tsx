@@ -20,13 +20,16 @@ function Header() {
     <div className="sticky top-0 z-50">
       <Container className="!px-8 relative border-b bg-white flex justify-between items-center py-2">
         <div className="flex items-center justify-between gap-x-4">
-          <img
-            src="/woa-logo.png"
-            alt="logo"
-            width={60}
-            height={60}
-            className="rounded-full"
-          />
+          <Link to="/">
+            <img
+              src="/woa-logo.png"
+              alt="logo"
+              width={60}
+              height={60}
+              className="rounded-full"
+            />
+          </Link>
+
           <Form action="#" className="hidden md:flex items-center justify-between gap-x-1">
             <LanguageButton name="lng" value="sq" locale={locale}>
               Shqip
