@@ -26,7 +26,6 @@ function Route() {
   const { t } = useTranslation();
 
   const { book } = useLoaderData<typeof loader>();
-  console.log(book);
 
   const popupBgRef = useRef();
 
@@ -34,6 +33,21 @@ function Route() {
     if (bypassEvent || event.target === popupBgRef.current) {
       nav("/books");
     }
+  };
+
+  const download = (dataurl, filename) => {
+    const link = document.createElement("a");
+    link.href = dataurl;
+    link.download = filename;
+    link.click();
+  }
+
+  const handleDownload = () => {
+    download(book.file_url, "book.pdf");
+  };
+
+  const handleOpen = () => {
+    window.open(book.file_url, "_blank");
   };
 
   useEffect(() => {
@@ -98,10 +112,10 @@ function Route() {
             </div>
 
             <div className="grid grid-cols-12 gap-2">
-              <Button className="col-span-12 md:col-span-4">
+              <Button className="hidden sm:block col-span-12 md:col-span-4" onClick={handleDownload}>
                 {t("download")}
               </Button>
-              <Button className="col-span-12 md:col-span-4">{t("open")}</Button>
+              <Button className="col-span-12 md:col-span-4" onClick={handleOpen}>{t("open")}</Button>
             </div>
           </div>
         </div>

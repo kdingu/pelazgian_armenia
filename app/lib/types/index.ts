@@ -21,4 +21,5 @@ export type Book = {
   isbn: string;
   description: string;
   publishing: string;
+  file_url: string;
 };

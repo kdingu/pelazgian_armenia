@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { OutletContext } from "~/lib/types";
 import Container from "~/components/container";
 import React from "react";
+import MobileHeader from "~/components/header/mobile";
 
 type LngBtnProps = {
   children: React.ReactNode;
@@ -26,7 +27,7 @@ function Header() {
             height={60}
             className="rounded-full"
           />
-          <Form className="flex items-center justify-between gap-x-1">
+          <Form className="hidden md:flex items-center justify-between gap-x-1">
             <LanguageButton name="lng" value="sq" locale={locale}>
               Shqip
             </LanguageButton>
@@ -37,11 +38,15 @@ function Header() {
           </Form>
         </div>
 
-        <nav className="flex gap-x-4 justify-between items-center">
+        <nav className="hidden md:flex gap-x-4 justify-between items-center">
           <NavLink to="/">{t("header.kreu")}</NavLink>
           <NavLink to="/about-us">{t("header.rreth_nesh")}</NavLink>
           <NavLink to="/contact">{t("header.kontakt")}</NavLink>
         </nav>
+
+        <div className="block md:hidden">
+          <MobileHeader />
+        </div>
 
         <div className="absolute top-0 left-0 w-[20px] h-full bg-gradient-to-b from-flag-red to-black" />
         <div className="absolute top-0 right-0 w-[20px] h-full bg-gradient-to-b from-flag-red via-flag-blue to-flag-orange" />
