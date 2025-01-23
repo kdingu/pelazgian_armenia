@@ -14,14 +14,11 @@ export default {
   },
   home: {
     title: "Albania and Armenia",
-    subtitle:
-      "The two powerful pillars of the Pelasgian bridge that connect the Indo-European space",
+    subtitle: "Two powerful pillars of the Indo-European bridge",
     body: `
-<p>Enter a world where Indo-European culture resembles a river that originates in ancient antiquity and, traversing countless centuries, has gathered along its historical journey numerous crystal-clear streams. Today, these have transformed it into a vast river of cultural wealth—a great river from which we can fish out values from humanity's embryonic history as well as cultural treasures created throughout humanity's historical journey, including the values we possess today.</p>
-<p>This collection of books presented in this window, aiming to explore the ancient history of two nations and the culture created by them—two nations that have withstood the storms and tempests of time—is nothing more than a compilation of observations made during a journey along a segment of the Indo-European cultural river. This specific segment flows along the shores of Armenian and Albanian culture. It is a journey in search of the bridge that once connected these two shores, across which our ancient Pelasgian ancestor freely moved from one side to the other.</p>
-<p>Your company would make this journey even more enjoyable!</p>
-<p>We invite you to be part of it!</p>
-`,
+      <p>This collection of materials in Albanian, translated poems, as well as the author's studies on the Armenian language and culture, includes original works, translated masterpieces, and carefully curated poems by some of the most renowned Armenian authors. You will also find unique and original dictionaries, Armenian-Albanian and Albanian-Armenian, the result of years of scholarly and scientific work by the author Berzh Piranjani.</p>
+      <p>Whether to expand knowledge of the Armenian language and culture or to become acquainted with Armenian poetry masterfully translated from the original into Albanian, this "library"—the fruit of an extraordinary, passionate, and long-standing effort by the author—represents an added value to the treasury of culture, literature, and linguistics, which we so greatly need in the times we live in.</p>
+    `,
   },
   books: {
     title: "Library",
@@ -42,5 +39,19 @@ export default {
     kreu: "Home",
     rreth_nesh: "About Us",
     kontakt: "Contact",
+  },
+  author: {
+    subtitle: "Born in Tirana on December 2, 1952.",
+    body: `
+      <p>He studied and graduated with the highest honors from the University of Tirana in the field of mechanical engineering.</p>
+      <p>He worked for a long time in the mining industry, where he distinguished himself as a designer and co-designer of several mineral processing plants in Albania.</p>
+      <p>Since the beginning of democracy in Albania, he has been one of the founders of the Armenian community in Albania.</p>
+      <p>He has been the organizer of several important activities organized by the community of Armenian origin in Albania.</p>
+      <p>For many years, as a self-taught individual, he has passionately dedicated himself to spreading Armenian culture and language in Albania, covering all costs with his own personal finances.</p>
+      <p>After many years of work, he has published over 20 books, ranging from translations of the poetry of great Armenian poets to unique Armenian-Albanian and Albanian-Armenian dictionaries.</p>
+      <p>He has visited Armenian soil several times, where he has had numerous meetings with institutions and people of Armenian culture.</p>
+      <p>In 2023, for his contributions, he was awarded the “Medal of Gratitude.”</p>
+      <p>He is a founding member of the “Armenian-Albanian Friendship” association, where he has also been elected as its Vice President.</p>
+    `,
   },
 };

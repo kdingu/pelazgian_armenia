@@ -14,13 +14,10 @@ export default {
   },
   home: {
     title: "Shqipëria dhe Armenia",
-    subtitle:
-      "Dy këmbët e fuqishme të urës Pellazgjike që lidhin hapësirën IndoEuropiane",
+    subtitle: "Dy këmbë të fuqishme të urës Indo-Europiane",
     body: `
-<p>Hyni në një botë ku kultura IndoEuropiane i përngjan një lumi që e ka burimin në lashtësinë shumë të hershme dhe që duke përshkuar shekujt të pafund ka mbledhur përgjatë rrugëtimit historik përrenj të shumtë me ujë të kulluar, të cilët sot e kanë bërë atë të shfaqet si një lumë i madh pasurie kulturore, si një lumë i madh ku mund të peshkohen vlera të historisë embrionale të njerëzimit dhe vlera kulturore të krijuara përgjatë rrugëtimit historik të njerëzimit, përfshirë edhe vlerat që zotërojmë ne sot.</p>
-<p>Ky grup librash të paraqitur në këtë dritare që synon të shohë nga historia e lashtë e dy kombeve dhe kultura e krijuar prej tyre, dy kombeve që i kanë rezistuar furtunave dhe stuhive të kohës, nuk është gjë tjetër vecse një përmbledhje e vrojtimeve gjatë udhëtimit nëpër një segment të këtij lumi të kulturës IndoEuropiane, të atij segmenti që lag brigjet e kulturës Armene dhe ato Shqiptare. Një udhëtim në kërkim të urës që lidhte këto dy brigje, e nëpërmjet së cilës babai ynë i lashtë Pellazgjik lëvizte lirshëm sa nga një anë në tjetrën.</p>
-<p>Shoqëria juaj do ta bënte akoma më të këndshëm këtë udhëtim!</p>
-<p>Ju ftojmë të jeni pjesë e tij!</p>
+      <p>Ky koleksion i materialeve në shqip, poezive të përkthyera, si dhe studimeve të autorit mbi gjuhën dhe kulturën armene, përfshin vepra origjinale, kryevepra të përkthyera dhe poezi të kuruara me kujdes nga disa prej autorëve më të njohur armenë. Do të gjeni gjithashtu fjalorë unikë dhe origjinalë, armenisht-shqip dhe shqip-armenisht, punë studimore e shkencore disavjeçare e autorit Berzh Piranjani.</p>
+      <p>Qoftë për të zgjeruar kulturën mbi gjuhën apo kulturën armene, apo për t'u njohur me poezinë armene të përkthyer mjeshtërisht nga origjinali në shqip, kjo "bibliotekë"—fryt i një pune pasionante të jashtëzakonshme shumëvjeçare të autorit—përbën një vlerë të shtuar në thesarin e kulturës, letërsisë dhe gjuhësisë, për të cilat kemi kaq shumë nevojë në kohët që jetojmë.</p>
     `,
   },
   books: {
@@ -42,5 +39,19 @@ export default {
     kreu: "Kreu",
     rreth_nesh: "Rreth Nesh",
     kontakt: "Kontakt",
+  },
+  author: {
+    subtitle: "Lindur në Tiranë, më 2 Dhjetor 1952.",
+    body: `
+      <p>Ka studiuar dhe ka përfunduar me vlerësimet më të larta Universitetin e Tiranës në degën e inxhinierisë mekanike.</p>
+      <p>Ka punuar për një kohë të gjatë në sektorin e industrisë minerare, ku është shquar si projektues dhe bashkëprojektues i disa fabrikave të pasurimit të mineraleve në Shqipëri.</p>
+      <p>Që në fillimet e demokracisë në Shqipëri, ka qenë një nga themeluesit e komunitetit të armenëve në Shqipëri.</p>
+      <p>Ka qenë organizator i disa aktiviteteve të rëndësishme që komuniteti me origjinë armene ka organizuar në Shqipëri.</p>
+      <p>Prej shumë vitesh, si autodidakt, i është kushtuar me pasion përhapjes së kulturës dhe gjuhës armene në Shqipëri, duke përballuar çdo kosto me financat e tij vetjake.</p>
+      <p>Pas një pune shumëvjeçare, ka botuar mbi 20 libra, që nga përkthimet e poezive të poetëve të mëdhenj armenë deri te fjalorët unikë armenisht-shqip dhe shqip-armenisht.</p>
+      <p>Ka vizituar disa herë tokën armene, ku ka pasur takime të shumta me institucione dhe njerëz të kulturës armene.</p>
+      <p>Në vitin 2023, për kontributin e tij, është dekoruar me “Medaljen e Mirënjohjes”.</p>
+      <p>Është anëtar themelues i shoqatës “Miqësia Armeno-Shqiptare”, ku është zgjedhur edhe zëvendëspresidenti i saj.</p>
+    `,
   },
 };
