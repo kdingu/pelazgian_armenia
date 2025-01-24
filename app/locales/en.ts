@@ -41,6 +41,7 @@ export default {
     kontakt: "Contact",
   },
   author: {
+    title: "Author",
     subtitle: "Born in Tirana on December 2, 1952.",
     body: `
       <p>He studied and graduated with the highest honors from the University of Tirana in the field of mechanical engineering.</p>

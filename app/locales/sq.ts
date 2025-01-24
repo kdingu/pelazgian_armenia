@@ -41,6 +41,7 @@ export default {
     kontakt: "Kontakt",
   },
   author: {
+    title: "Autori",
     subtitle: "Lindur në Tiranë, më 2 Dhjetor 1952.",
     body: `
       <p>Ka studiuar dhe ka përfunduar me vlerësimet më të larta Universitetin e Tiranës në degën e inxhinierisë mekanike.</p>
