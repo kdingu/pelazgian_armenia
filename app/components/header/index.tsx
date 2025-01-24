@@ -43,7 +43,7 @@ function Header() {
 
         <nav className="hidden md:flex gap-x-4 justify-between items-center">
           <NavLink to="/">{t("header.kreu")}</NavLink>
-          <NavLink to="/about-us">{t("header.rreth_nesh")}</NavLink>
+          <NavLink to="/author">{t("header.rreth_nesh")}</NavLink>
           <NavLink to="/contact">{t("header.kontakt")}</NavLink>
         </nav>
 

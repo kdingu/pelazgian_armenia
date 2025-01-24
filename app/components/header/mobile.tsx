@@ -58,7 +58,7 @@ function MobileHeader() {
 
             <nav className="flex flex-col gap-x-4 justify-center items-start" onClick={handleClickNav}>
               <NavLink to="/">{t("header.kreu")}</NavLink>
-              <NavLink to="/about-us">{t("header.rreth_nesh")}</NavLink>
+              <NavLink to="/author">{t("header.rreth_nesh")}</NavLink>
               <NavLink to="/contact">{t("header.kontakt")}</NavLink>
             </nav>
           </div>
