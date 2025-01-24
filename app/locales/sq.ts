@@ -37,7 +37,7 @@ export default {
   },
   header: {
     kreu: "Kreu",
-    rreth_nesh: "Rreth Nesh",
+    autori: "Autori",
     kontakt: "Kontakt",
   },
   author: {

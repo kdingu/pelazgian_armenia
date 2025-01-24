@@ -44,7 +44,10 @@ function MobileHeader() {
 
           <div className="pt-12 px-2">
             <span className="capitalize text-sm">{t("language")}:</span>
-            <Form action="#" className="flex flex-col justify-center items-start">
+            <Form
+              action="#"
+              className="flex flex-col justify-center items-start"
+            >
               <LanguageButton name="lng" value="sq" locale={locale}>
                 Shqip
               </LanguageButton>
@@ -56,9 +59,12 @@ function MobileHeader() {
 
             <hr className="my-4" />
 
-            <nav className="flex flex-col gap-x-4 justify-center items-start" onClick={handleClickNav}>
+            <nav
+              className="flex flex-col gap-x-4 justify-center items-start"
+              onClick={handleClickNav}
+            >
               <NavLink to="/">{t("header.kreu")}</NavLink>
-              <NavLink to="/author">{t("header.rreth_nesh")}</NavLink>
+              <NavLink to="/author">{t("header.autori")}</NavLink>
               <NavLink to="/contact">{t("header.kontakt")}</NavLink>
             </nav>
           </div>

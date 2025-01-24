@@ -37,7 +37,7 @@ export default {
   },
   header: {
     kreu: "Home",
-    rreth_nesh: "About Us",
+    autori: "Author",
     kontakt: "Contact",
   },
   author: {
