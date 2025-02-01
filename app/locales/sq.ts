@@ -22,6 +22,7 @@ export default {
   },
   books: {
     title: "Libraria",
+    filter_by_category: "Kategoria",
   },
   about_us: {
     title: "Rreth Nesh",
