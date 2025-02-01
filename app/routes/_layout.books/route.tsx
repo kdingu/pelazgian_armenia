@@ -86,7 +86,7 @@ function Route() {
             <Link
               key={book.id}
               to={`/books/${book.slug}`}
-              className="m-auto sm:m-0 sm:w-full"
+              className="m-auto w-max"
             >
               <BookTile data={book} />
             </Link>

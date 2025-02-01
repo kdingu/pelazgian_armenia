@@ -2,6 +2,7 @@ import { Form, Link, useOutletContext } from "@remix-run/react";
 import { useTranslation } from "react-i18next";
 import { OutletContext } from "~/lib/types";
 import React, { useState } from "react";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 type LngBtnProps = {
   children: React.ReactNode;
@@ -22,9 +23,9 @@ function MobileHeader() {
 
   const handleClickNav = (event) => {
     if (event.target.tagName === "A") {
-      setIsOpen(false)
+      setIsOpen(false);
     }
-  }
+  };
 
   return (
     <div className="relative">
@@ -39,12 +40,15 @@ function MobileHeader() {
       >
         <div className="relative">
           <button onClick={toggleMenu} className="absolute top-1 right-1 p-2">
-            {t("close")}
+            <IoIosCloseCircleOutline size={40} />
           </button>
 
-          <div className="pt-12 px-2">
-            <span className="capitalize text-sm">{t("language")}:</span>
-            <Form action="#" className="flex flex-col justify-center items-start">
+          <div className="pt-16 px-6">
+            <div className="capitalize text-lg mb-6">{t("language")}:</div>
+            <Form
+              action="#"
+              className="text-4xl gap-4 flex flex-col justify-center items-start"
+            >
               <LanguageButton name="lng" value="sq" locale={locale}>
                 Shqip
               </LanguageButton>
@@ -56,7 +60,11 @@ function MobileHeader() {
 
             <hr className="my-4" />
 
-            <nav className="flex flex-col gap-x-4 justify-center items-start" onClick={handleClickNav}>
+            <div className="capitalize text-lg my-6">{t("pages")}:</div>
+            <nav
+              className="text-4xl flex flex-col gap-4 justify-center items-start"
+              onClick={handleClickNav}
+            >
               <NavLink to="/">{t("header.kreu")}</NavLink>
               <NavLink to="/author">{t("header.rreth_nesh")}</NavLink>
               <NavLink to="/contact">{t("header.kontakt")}</NavLink>

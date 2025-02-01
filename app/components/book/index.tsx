@@ -12,7 +12,7 @@ function BookTile({ data, className = "" }: Props) {
 
   return (
     <div
-      className={`group relative overflow-hidden h-[350px] lg:h-[250px] w-full bg-black ${className}`}
+      className={`group relative overflow-hidden h-[350px] lg:h-[250px] w-max bg-black ${className}`}
     >
       <img
         src={
