@@ -42,12 +42,11 @@ function MobileHeader() {
           <button onClick={toggleMenu} className="absolute top-1 right-1 p-2">
             <IoIosCloseCircleOutline size={40} />
           </button>
-
           <div className="pt-16 px-6">
-            <div className="capitalize text-lg mb-6">{t("language")}:</div>
-            <Form
-              action="#"
-              className="text-4xl gap-4 flex flex-col justify-center items-start"
+          <div className="capitalize text-lg mb-6">{t("language")}:</div>
+        <Form
+          action="#"
+          className="text-4xl gap-4 flex flex-col justify-center items-start"
             >
               <LanguageButton name="lng" value="sq" locale={locale}>
                 Shqip
@@ -66,7 +65,7 @@ function MobileHeader() {
               onClick={handleClickNav}
             >
               <NavLink to="/">{t("header.kreu")}</NavLink>
-              <NavLink to="/author">{t("header.rreth_nesh")}</NavLink>
+              <NavLink to="/author">{t("header.autori")}</NavLink>
               <NavLink to="/contact">{t("header.kontakt")}</NavLink>
             </nav>
           </div>

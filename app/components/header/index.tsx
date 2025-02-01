@@ -30,7 +30,10 @@ function Header() {
             />
           </Link>
 
-          <Form action="#" className="hidden md:flex items-center justify-between gap-x-1">
+          <Form
+            action="#"
+            className="hidden md:flex items-center justify-between gap-x-1"
+          >
             <LanguageButton name="lng" value="sq" locale={locale}>
               Shqip
             </LanguageButton>
@@ -43,7 +46,7 @@ function Header() {
 
         <nav className="hidden md:flex gap-x-4 justify-between items-center">
           <NavLink to="/">{t("header.kreu")}</NavLink>
-          <NavLink to="/author">{t("header.rreth_nesh")}</NavLink>
+          <NavLink to="/author">{t("header.autori")}</NavLink>
           <NavLink to="/contact">{t("header.kontakt")}</NavLink>
         </nav>
 
