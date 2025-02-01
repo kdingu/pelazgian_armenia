@@ -22,6 +22,7 @@ export default {
   },
   books: {
     title: "Library",
+    filter_by_category: "Category",
   },
   about_us: {
     title: "About Us",

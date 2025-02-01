@@ -56,7 +56,7 @@ function Route() {
       <div className="flex justify-between items-center mb-4 mt-10">
         <Form ref={formRef} onChange={submitForm}>
           <label>
-            <div className="mb-1">{t("filter_by_category")}</div>
+            <div className="mb-1">{t("books.filter_by_category")}</div>
             <select
               name="category"
               id="category"

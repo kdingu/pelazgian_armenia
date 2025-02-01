@@ -68,7 +68,7 @@ function Route() {
       <div className="relative cursor-auto p-10 w-full h-max max-h-screen max-w-5xl m-x-auto bg-paper-white rounded-lg shadow-2xl">
         <MdOutlineCancel
           onClick={() => handleGoBack(null, true)}
-          className="absolute top-1 left-1 text-flag-red md:top-0 md:left-0 md:-translate-y-[120%] md:text-white"
+          className="absolute top-1 left-1 text-flag-red md:top-0 md:left-0 md:-translate-y-[120%] md:text-white cursor-pointer"
           size={32}
         />
 
@@ -112,10 +112,18 @@ function Route() {
             </div>
 
             <div className="grid grid-cols-12 gap-2">
-              <Button className="hidden sm:block col-span-12 md:col-span-4" onClick={handleDownload}>
+              <Button
+                className="hidden sm:block col-span-12 md:col-span-4"
+                onClick={handleDownload}
+              >
                 {t("download")}
               </Button>
-              <Button className="col-span-12 md:col-span-4" onClick={handleOpen}>{t("open")}</Button>
+              <Button
+                className="col-span-12 md:col-span-4"
+                onClick={handleOpen}
+              >
+                {t("open")}
+              </Button>
             </div>
           </div>
         </div>
