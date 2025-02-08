@@ -63,11 +63,11 @@ function Route() {
               className="border px-4 py-2 !w-52"
               defaultValue={query.get("category")}
             >
-              <option value="">All</option>
+              <option value="">{t("be.all")}</option>
               {categories.map((ctg) => {
                 return (
                   <option key={ctg.slug} value={ctg.id}>
-                    {ctg.name}
+                    {t(`be.${ctg.slug}`)}
                   </option>
                 );
               })}

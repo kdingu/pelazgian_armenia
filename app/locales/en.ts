@@ -5,12 +5,14 @@ export default {
   view_more: "View More",
   sort_by: "Sort by",
   kategorite: "Categories",
-  highlighted_books: "Latest Books",
+  highlighted_books: "Most popular titles",
   libraria: "View all books",
   be: {
+    all: "All",
     poetry: "Poetry",
     dictionary: "Dictionary",
-    historic: "Historic",
+    "historic-literature": "Historic Literature",
+    linguistic: "Linguistic",
   },
   home: {
     title: "Albania and Armenia",
@@ -34,7 +36,7 @@ export default {
     title: "Single Book",
   },
   footer: {
-    disclaimer: "© 2024 Words of Armenia. All Rights Reserved.",
+    disclaimer: "© 2025 Armenia Pellazgjike. All Rights Reserved.",
   },
   header: {
     kreu: "Home",

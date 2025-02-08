@@ -21,9 +21,9 @@ function Categories() {
               to={`/books?category=${ctg.id}`}
               className="w-full"
             >
-              <Button className="group w-full">
+              <Button className="group w-full h-full">
                 <div className="flex items-center justify-center gap-x-2">
-                  <span>{t(`be.${ctg.name.toLowerCase()}`)}</span>
+                  <span>{t(`be.${ctg.slug}`)}</span>
                   <GrNext className="transition-all group-hover:translate-x-2" />
                 </div>
               </Button>

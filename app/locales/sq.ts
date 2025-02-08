@@ -5,12 +5,14 @@ export default {
   view_more: "Shiko më shumë",
   sort_by: "Rendit sipas",
   kategorite: "Kategoritë",
-  highlighted_books: "Publikimet më të reja",
+  highlighted_books: "Titujt më në zë",
   libraria: "Shiko të gjithë librat",
   be: {
+    all: "Të gjitha",
     poetry: "Poezi",
     dictionary: "Fjalor",
-    historic: "Histori",
+    "historic-literature": "Letërsi Historike",
+    linguistic: "Linguistikë",
   },
   home: {
     title: "Shqipëria dhe Armenia",
@@ -34,7 +36,8 @@ export default {
     title: "Te dhënat e librit",
   },
   footer: {
-    disclaimer: "© 2024 Fjalë të Armenisë. Të gjitha të drejtat të rezevuara.",
+    disclaimer:
+      "© 2025 Armenia Pellazgjike. Të gjitha të drejtat të rezevuara.",
   },
   header: {
     kreu: "Kreu",

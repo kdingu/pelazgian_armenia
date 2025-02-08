@@ -7,7 +7,8 @@ function Route() {
 
   return (
     <div>
-      <Title>{t("author.title")}</Title>
+      {/* <Title>{t("author.title")}</Title> */}
+      <Title>Berzh Vahram Piranjani</Title>
       <Subtitle>{t("author.subtitle")}</Subtitle>
 
       <div className="relative pb-4">
