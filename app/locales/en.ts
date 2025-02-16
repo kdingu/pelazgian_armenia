@@ -29,9 +29,6 @@ export default {
   about_us: {
     title: "About Us",
   },
-  contact: {
-    title: "Contact",
-  },
   single_book: {
     title: "Single Book",
   },
@@ -57,5 +54,19 @@ export default {
       <p>In 2023, for his contributions, he was awarded the “Medal of Gratitude.”</p>
       <p>He is a founding member of the “Armenian-Albanian Friendship” association, where he has also been elected as its Vice President.</p>
     `,
+  },
+  contact: {
+    title: "Contact",
+
+    contact_us: "You can reach us via",
+    call_us: "Phone",
+    or: "or",
+    whatsapp: "Whatsapp",
+    or_by: "Or by sending an email",
+
+    full_name: "Full Name",
+    email: "Email Address",
+    message: "Message",
+    send_message: "Send Message",
   },
 };

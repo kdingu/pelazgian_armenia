@@ -29,9 +29,6 @@ export default {
   about_us: {
     title: "Rreth Nesh",
   },
-  contact: {
-    title: "Kontakt",
-  },
   single_book: {
     title: "Te dhënat e librit",
   },
@@ -58,5 +55,19 @@ export default {
       <p>Në vitin 2023, për kontributin e tij, është dekoruar me “Medaljen e Mirënjohjes”.</p>
       <p>Është anëtar themelues i shoqatës “Miqësia Armeno-Shqiptare”, ku është zgjedhur edhe zëvendëspresidenti i saj.</p>
     `,
+  },
+  contact: {
+    title: "Kontakt",
+
+    contact_us: "Na kontaktoni nëpërmjet",
+    call_us: "Telefonit",
+    or: "ose",
+    whatsapp: "Whatsapp",
+    or_by: "Ose duke dërguar një email",
+
+    full_name: "Emri i plotë",
+    email: "Adresa e emailit",
+    message: "Mesazhi",
+    send_message: "Dërgo Mesazhin",
   },
 };

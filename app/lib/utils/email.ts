@@ -1,6 +1,11 @@
 import { Resend } from "resend";
 
+
+
 const resend = new Resend(process.env.RESEND_API_KEY);
+const senderName = process.env.EMAIL_SENDER_NAME;
+const senderAddress = process.env.EMAIL_SENDER_ADDRESS;
+const recipientAddress = process.env.EMAIL_RECIPIENT_ADDRESS;
 
 export async function sendEmail({
   name,
@@ -13,9 +18,9 @@ export async function sendEmail({
 }) {
   try {
     const response = await resend.emails.send({
-      from: `Your Name <contact@yourdomain.com>`, // Use the verified domain
-      to: ["your-email@example.com"], // Your email address to receive messages
-      subject: "New Contact Form Submission",
+      from: `${senderName} <${senderAddress}>`,
+      to: [`${recipientAddress}`],
+      subject: "Kërkesë kontakti nëpërmjet faqes ArmeniaPellazgjike.com",
       text: `From: ${name} <${email}>\n\nMessage:\n${message}`,
       replyTo: email, // Allows you to reply directly to the sender
     });
