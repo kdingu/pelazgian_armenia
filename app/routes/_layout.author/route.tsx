@@ -6,10 +6,11 @@ function Route() {
   const { t } = useTranslation();
 
   return (
-    <div>
-      {/* <Title>{t("author.title")}</Title> */}
-      <Title>Berzh Vahram Piranjani</Title>
+    <div className="py-10">
+      <Title className="text-pastel-blue">Berzh Vahram Piranjani</Title>
       <Subtitle>{t("author.subtitle")}</Subtitle>
+
+      <hr className="my-6" />
 
       <div className="relative pb-4">
         <img

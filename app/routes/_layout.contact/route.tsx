@@ -6,7 +6,7 @@ function Route() {
 
   return (
     <div className="py-10">
-      <Title>{t("contact.title")}</Title>
+      <Title className="text-pastel-blue">{t("contact.title")}</Title>
     </div>
   );
 }

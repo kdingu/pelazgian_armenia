@@ -6,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  useLocation,
   useRouteLoaderData,
 } from "@remix-run/react";
 import i18nServer, { localeCookie } from "./modules/i18n.server";
@@ -29,13 +30,27 @@ export async function loader({ request }: LoaderFunctionArgs) {
 export function Layout({ children }: { children: React.ReactNode }) {
   const loaderData = useRouteLoaderData<typeof loader>("root");
 
+  const location = useLocation();
+  const canonicalUrl = `https://armeniapellazgjike.com${location.pathname}`;
+
   return (
     <html lang={loaderData?.locale ?? "en"}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Koleksioni i përkthimeve dhe studimeve letrate të autorit Berzh Piranjani për urën lidhëse ndërmjet gjuhës dhe kulturës shqipe dhe armene."
+        />
+        <meta
+          name="keywords"
+          content="Shqipëri, Armeni, shqip, armenisht, përkthime, letërsi, literaturë, histori, fjalor, poezi, Berzh, Piranjani, pellazg"
+        />
+        <meta name="author" content="Kevin Piranjani" />
+        <meta name="robots" content="index, follow" />
         <Meta />
         <Links />
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
