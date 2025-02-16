@@ -1,7 +1,7 @@
 import { Form, useActionData } from "@remix-run/react";
 import { ActionFunction, json } from "@remix-run/node";
 import { sendEmail } from "~/lib/utils/email";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Title from "~/components/title";
 import Input from "~/components/input";
@@ -9,7 +9,6 @@ import Textarea from "~/components/textarea";
 import ButtonSubmit from "~/components/button-submit";
 import { GrNext, GrPhone, GrWhatsapp } from "react-icons/gr";
 import ContactLink from "~/components/contact-anchor";
-import Subtitle from "~/components/subtitle";
 import SectionTitle from "~/components/section-title";
 
 export const action: ActionFunction = async ({ request }) => {
@@ -58,6 +57,13 @@ function Route() {
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  // Reset form fields when the message is sent successfully
+  useEffect(() => {
+    if (actionData?.success) {
+      setFormData({ name: "", email: "", message: "" });
+    }
+  }, [actionData]);
 
   return (
     <div className="py-10">
