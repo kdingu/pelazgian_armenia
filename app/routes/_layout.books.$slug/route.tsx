@@ -40,7 +40,7 @@ function Route() {
     link.href = dataurl;
     link.download = filename;
     link.click();
-  }
+  };
 
   const handleDownload = () => {
     download(book.file_url, "book.pdf");
@@ -104,7 +104,7 @@ function Route() {
               <Subtitle className="!text-black font-normal !text-sm">
                 {book.subtitle}
               </Subtitle>
-              <p className="text-justify overflow-y-scroll max-h-[200px] sm:max-h-auto">
+              <p className="text-justify overflow-y-auto max-h-[200px] sm:max-h-auto book-description-scrollbar pr-1">
                 {book.description}
               </p>
               <hr />
@@ -112,12 +112,12 @@ function Route() {
             </div>
 
             <div className="grid grid-cols-12 gap-2">
-              <Button
+              {/* <Button
                 className="hidden sm:block col-span-12 md:col-span-4"
                 onClick={handleDownload}
               >
                 {t("download")}
-              </Button>
+              </Button> */}
               <Button
                 className="col-span-12 md:col-span-4"
                 onClick={handleOpen}
