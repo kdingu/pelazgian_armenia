@@ -43,10 +43,10 @@ function MobileHeader() {
             <IoIosCloseCircleOutline size={40} />
           </button>
           <div className="pt-16 px-6">
-          <div className="capitalize text-lg mb-6">{t("language")}:</div>
-        <Form
-          action="#"
-          className="text-4xl gap-4 flex flex-col justify-center items-start"
+            <div className="capitalize text-lg mb-6">{t("language")}:</div>
+            <Form
+              action="#"
+              className="text-4xl gap-4 flex flex-col justify-center items-start"
             >
               <LanguageButton name="lng" value="sq" locale={locale}>
                 Shqip
