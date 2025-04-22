@@ -1,7 +1,5 @@
 import { Resend } from "resend";
 
-
-
 const resend = new Resend(process.env.RESEND_API_KEY);
 const senderName = process.env.EMAIL_SENDER_NAME;
 const senderAddress = process.env.EMAIL_SENDER_ADDRESS;

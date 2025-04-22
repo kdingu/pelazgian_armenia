@@ -28,7 +28,11 @@ function HighlightedBooks({ data }: Props) {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {data.map((book: Book) => {
           return (
-            <Link key={book.id} to={`/books/${book.slug}`} className="w-max m-auto">
+            <Link
+              key={book.id}
+              to={`/books/${book.slug}`}
+              className="w-max m-auto"
+            >
               <BookTile data={book} />
             </Link>
           );
